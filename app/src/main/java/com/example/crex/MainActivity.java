@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
             }
         });
+
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mainTabLayout));
     }
     private void setupTabsInTabLayout() {
         TabLayout.Tab upcomingTab = mainTabLayout.newTab();
